@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGO Dashboard | AidSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <aside class="sidebar">
+    <div class="brand sidebar-brand">
+      <div class="brand-mark">◆</div>
+      <span>AidSync</span>
+    </div>
+
+    <nav class="side-nav">
+      <a class="active" href="ngo-dashboard.html">Dashboard</a>
+      <a href="#">Needs</a>
+      <a href="#">Volunteers</a>
+      <a href="#">Assignments</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dash-topbar">
+      <div>
+        <h1>NGO Admin Dashboard</h1>
+        <p>Manage urgent needs, volunteers, and assignments.</p>
+      </div>
+
+      <div class="top-actions">
+        <input type="text" placeholder="Search..." class="search-input" />
+        <div class="avatar">A</div>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <div class="dash-card stat">
+        <span>Total Needs</span>
+        <strong>120</strong>
+      </div>
+      <div class="dash-card stat urgent">
+        <span>Urgent</span>
+        <strong>18</strong>
+      </div>
+      <div class="dash-card stat green">
+        <span>Volunteers</span>
+        <strong>52</strong>
+      </div>
+      <div class="dash-card stat">
+        <span>Tasks Done</span>
+        <strong>30</strong>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>Needs by Category</h3>
+        </div>
+        <div class="chart-placeholder">
+          <div class="chart-ring"></div>
+          <div class="legend">
+            <span><i class="dot blue"></i> Medical</span>
+            <span><i class="dot red"></i> Food</span>
+            <span><i class="dot yellow"></i> Shelter</span>
+            <span><i class="dot green"></i> Education</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>Status Trends</h3>
+        </div>
+        <div class="trend-placeholder">
+          <div class="trend-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>Urgent Requests</h3>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Need</th>
+                <th>Area</th>
+                <th>Priority</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Medical Assistance</td>
+                <td>Village A</td>
+                <td><span class="tag urgent">Urgent</span></td>
+                <td><button class="btn btn-small btn-primary">Assign</button></td>
+              </tr>
+              <tr>
+                <td>Food Delivery</td>
+                <td>Village B</td>
+                <td><span class="tag high">High</span></td>
+                <td><button class="btn btn-small btn-primary">Assign</button></td>
+              </tr>
+              <tr>
+                <td>Water Supply</td>
+                <td>Village C</td>
+                <td><span class="tag medium">Medium</span></td>
+                <td><button class="btn btn-small btn-primary">Assign</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>Smart Matches</h3>
+        </div>
+
+        <div class="match-list">
+          <div class="match-item">
+            <div>
+              <strong>Priya</strong>
+              <p>Medical Camp • Near Village A</p>
+            </div>
+            <button class="btn btn-small btn-success">Assign</button>
+          </div>
+
+          <div class="match-item">
+            <div>
+              <strong>Rahul</strong>
+              <p>Food Delivery • Near Village B</p>
+            </div>
+            <button class="btn btn-small btn-success">Assign</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

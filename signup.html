@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | AidSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">◆</div>
+      <span>AidSync</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <div class="section-heading center">
+        <h2>Create Your Account</h2>
+        <p>Choose your role to continue.</p>
+      </div>
+
+      <form class="auth-form" id="signupForm">
+        <div class="two-col">
+          <label>
+            First Name
+            <input type="text" placeholder="First name" required />
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" placeholder="Last name" required />
+          </label>
+        </div>
+
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Password
+          <input type="password" placeholder="Create password" required />
+        </label>
+
+        <label>
+          Location
+          <input type="text" placeholder="Karnataka, India" value="Karnataka, India" />
+        </label>
+
+        <label>
+          Role
+          <select required>
+            <option value="">Select role</option>
+            <option value="ngo">NGO Admin</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="reporter">Reporter / Survey User</option>
+          </select>
+        </label>
+
+        <button class="btn btn-primary btn-full" type="submit">Sign Up</button>
+
+        <p class="small-text">
+          Already have an account? <a href="login.html">Login</a>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

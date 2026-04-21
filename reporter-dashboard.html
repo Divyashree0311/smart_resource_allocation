@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporter Dashboard | AidSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <aside class="sidebar">
+    <div class="brand sidebar-brand">
+      <div class="brand-mark">◆</div>
+      <span>AidSync</span>
+    </div>
+
+    <nav class="side-nav">
+      <a class="active" href="reporter-dashboard.html">Dashboard</a>
+      <a href="#">Submit Need</a>
+      <a href="#">History</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dash-topbar">
+      <div>
+        <h1>Reporter / Survey Dashboard</h1>
+        <p>Submit local needs and track request status.</p>
+      </div>
+
+      <div class="top-actions">
+        <div class="avatar">V</div>
+      </div>
+    </header>
+
+    <section class="dash-card submit-box">
+      <div>
+        <h2>Submit New Need</h2>
+        <p>Report urgent community issues in your area.</p>
+      </div>
+      <button class="btn btn-primary">+ Submit Need</button>
+    </section>
+
+    <section class="dash-card">
+      <div class="card-header">
+        <h3>My Requests</h3>
+      </div>
+
+      <div class="task-list">
+        <div class="task-item">
+          <div>
+            <strong>Village Needs Water</strong>
+            <p>Rural Village • Updated 1 hour ago</p>
+          </div>
+          <span class="tag medium">Pending</span>
+        </div>
+
+        <div class="task-item">
+          <div>
+            <strong>Food Supplies Needed</strong>
+            <p>Urban Area • 30 people</p>
+          </div>
+          <span class="tag high">Assigned</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-card">
+      <div class="card-header">
+        <h3>Community Updates</h3>
+      </div>
+
+      <div class="updates-list">
+        <div class="update-item">
+          <strong>Hygiene kits distributed</strong>
+          <p>Rural Village • 2 hours ago</p>
+        </div>
+        <div class="update-item">
+          <strong>Volunteers assisted the elderly</strong>
+          <p>Urban Area • Yesterday</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

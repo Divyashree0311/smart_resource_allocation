@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Dashboard | AidSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <aside class="sidebar">
+    <div class="brand sidebar-brand">
+      <div class="brand-mark">◆</div>
+      <span>AidSync</span>
+    </div>
+
+    <nav class="side-nav">
+      <a class="active" href="volunteer-dashboard.html">Dashboard</a>
+      <a href="#">My Tasks</a>
+      <a href="#">Completed</a>
+      <a href="#">Profile</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dash-topbar">
+      <div>
+        <h1>Welcome, Rahul!</h1>
+        <p>Track your tasks and update availability.</p>
+      </div>
+
+      <div class="top-actions">
+        <div class="avatar">R</div>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <div class="dash-card stat green">
+        <span>New Tasks</span>
+        <strong>3</strong>
+      </div>
+      <div class="dash-card stat">
+        <span>In Progress</span>
+        <strong>2</strong>
+      </div>
+      <div class="dash-card stat">
+        <span>Completed</span>
+        <strong>7</strong>
+      </div>
+      <div class="dash-card stat urgent">
+        <span>Urgent</span>
+        <strong>1</strong>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>Available Tasks</h3>
+        </div>
+
+        <div class="task-list">
+          <div class="task-item">
+            <div>
+              <strong>Deliver Food Supplies</strong>
+              <p>Village B • Urgent</p>
+            </div>
+            <button class="btn btn-small btn-success">Accept</button>
+          </div>
+
+          <div class="task-item">
+            <div>
+              <strong>Provide Medical Help</strong>
+              <p>Village A • High</p>
+            </div>
+            <button class="btn btn-small btn-success">Accept</button>
+          </div>
+
+          <div class="task-item">
+            <div>
+              <strong>Water Supply</strong>
+              <p>Village C • Medium</p>
+            </div>
+            <button class="btn btn-small btn-success">Accept</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-card">
+        <div class="card-header">
+          <h3>My Schedule / Availability</h3>
+        </div>
+
+        <div class="schedule-box">
+          <label><input type="checkbox" checked /> Monday</label>
+          <label><input type="checkbox" checked /> Tuesday</label>
+          <label><input type="checkbox" checked /> Wednesday</label>
+          <label><input type="checkbox" /> Thursday</label>
+          <label><input type="checkbox" /> Friday</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-card">
+      <div class="card-header">
+        <h3>Smart Matches</h3>
+      </div>
+
+      <div class="match-list">
+        <div class="match-item">
+          <div>
+            <strong>Priya</strong>
+            <p>Medical Camp • Near Village A</p>
+          </div>
+          <button class="btn btn-small btn-primary">Assign</button>
+        </div>
+
+        <div class="match-item">
+          <div>
+            <strong>Rahul</strong>
+            <p>Food Delivery • Near Village B</p>
+          </div>
+          <button class="btn btn-small btn-primary">Assign</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
